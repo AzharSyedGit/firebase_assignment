@@ -1,0 +1,206 @@
+@import url('http://fonts.googleapis.com/css?family=Archivo+Narrow'); 
+ h4{
+  color:#1A8F57;
+ font-family:"Archivo Narrow";
+ font-size:22px;
+ margin-top:-1px;
+ }
+ 
+ 
+ #redirectdiv{
+     background-color:azure;
+	 height:600px;
+ 
+ }
+ 
+ .font{
+      font-family:"Archivo Narrow";
+	  color:white;
+ 
+ }
+ h1{
+         color:white;
+		 font-size:40px;
+		 text-align:center;
+		 margin:0;
+		  font-family:"Archivo Narrow";
+		 }
+ 
+ header{
+	            
+         background-color:#1A8F57;
+         border-radius:10px;				
+	            
+	         }
+/*			 
+footer{
+
+         background-color:#070B8C;
+         border-radius:10px;
+         clear:both;		 
+
+}
+*/
+#div_mid_left{
+    
+        height:600px;
+		width:40%;
+		background-color:Azure;
+		float:left;
+
+
+
+		}
+#div_mid_right{
+        height:600px;
+		width:60%;
+        background-color:azure;
+        float:left;
+
+}
+
+#div_footer_left{
+      height:250px;
+	  width:39%;
+	 background-color:#1A8F57;
+	  float:left;
+
+
+
+}	
+#div_footer_right{
+      height:250px;
+	  width:60%;
+	  background-color:#1A8F57;
+	  float:right;
+      
+
+
+}		
+		
+#image-text{
+
+    margin-left:10px;
+	background-color:white;
+
+
+}		
+
+#img{
+
+     display:block;
+	 padding-left:17px; 
+	 padding-top:17px;
+     border-radius:10px;
+
+
+}
+#p{
+      text-align:center;
+      padding-left:17px;
+      padding-right:17px;
+
+}
+.new_div{
+
+    height:110px;
+	width:780px;
+	background-color:white;
+	margin:10px;
+    border:1px solid #50C778;
+
+
+}
+h2{
+    
+   text-align:center;
+   color:#1A8F57;
+}
+h3{
+  text-align:center;
+}
+hr{
+color:white;
+
+}
+.buttonfloat{
+float:right;
+margin-top:90px;
+}
+
+
+#formfloat{
+      float:left;
+	  margin-top:2%;
+	  margin-left:15%;
+
+
+}
+#symbol{
+
+   margin-left:5%;
+
+}
+
+.outputcolor{
+
+       color:white;
+
+}
+@media screen and (max-width:600px){
+#div_mid_left{
+            width:100%;
+          }
+		  
+		  
+
+#div_mid_right{
+        
+		width:100%;
+       
+
+}
+#div_footer_right{
+      margin-top:2%;
+	  width:100%;
+
+   
+
+
+}	
+#img{
+     width:93%;
+
+}
+#p{
+     width:93%;
+}	
+.new_div{
+      
+      width:450px;
+}
+#div_footer_left{
+     width:100%;
+}
+.font{
+ text-align:justify;
+
+}
+h2
+{
+padding-left:180px;
+}
+h3{
+padding-left:180px;
+
+}
+#symbol{
+
+   margin-left:35%;
+
+}
+#formfloat{
+  margin-left:35%;
+
+}
+}
