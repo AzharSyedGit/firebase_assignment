@@ -108,7 +108,15 @@ footer{
 	background-color:white;
 	margin:10px;
     border:1px solid #50C778;
+	
 
+
+}
+.newdivi{
+overflow:hidden;
+max-width:100ch;
+white-space:nowrap;
+text-overflow:ellipsis;
 
 }
 h2{

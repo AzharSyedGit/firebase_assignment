@@ -7,24 +7,28 @@
 	   <script src="js/assign.js"></script>
 	   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 	   <script>
-	   var myFirebaseRef = new Firebase("https://assign123.firebaseio.com/");
-	   myFirebaseRef.child("TEXT").on("value", function(snapshot) {
+	   var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	   myFirebaseRef.child("HEADING1").on("value", function(snapshot) {
   document.getElementById("new_div1").innerHTML=snapshot.val();  
+  document.getElementById("new_div12").innerHTML=snapshot.name(); 
 });
 
-var myFirebaseRef = new Firebase("https://assign123.firebaseio.com/");
-	   myFirebaseRef.child("TEXT1").on("value", function(snapshot) {
+var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	   myFirebaseRef.child("HEADING2").on("value", function(snapshot) {
   document.getElementById("new_div2").innerHTML=snapshot.val();  
+  document.getElementById("new_div13").innerHTML=snapshot.name(); 
 });
 
-var myFirebaseRef = new Firebase("https://assign123.firebaseio.com/");
-	   myFirebaseRef.child("TEXT2").on("value", function(snapshot) {
-  document.getElementById("new_div3").innerHTML=snapshot.val();  
+var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	   myFirebaseRef.child("HEADING3").on("value", function(snapshot) {
+  document.getElementById("new_div3").innerHTML=snapshot.val();
+document.getElementById("new_div14").innerHTML=snapshot.name();  
 });
 
-var myFirebaseRef = new Firebase("https://assign123.firebaseio.com/");
-	   myFirebaseRef.child("TEXT3").on("value", function(snapshot) {
+var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	   myFirebaseRef.child("HEADING4").on("value", function(snapshot) {
   document.getElementById("new_div4").innerHTML=snapshot.val();  
+  document.getElementById("new_div15").innerHTML=snapshot.name(); 
 });
 	   </script>
   </head>
@@ -45,36 +49,47 @@ var myFirebaseRef = new Firebase("https://assign123.firebaseio.com/");
 		   <p id="p" class="font" style="color:#1A8F57;">Some text here.Some text here.Some text here.Some text here.Some text here.</p>
 	       </div>
 	      </div>
+		</div>
 	  <div id="div_mid_right">
 	  
 	        <h2 class="font" style="color:#1A8F57;">Latest News</h2><hr>
 	  
-	        <div  class="new_div"><div class="buttonfloat"><input type="submit" value="Read More" name="button1" id="button1" onclick="window.location='redirect.html';"></div><div id="new_div1"><p id="p" class="font" style="color:#1A8F57;">Some text here.Some text here.Some text here.Some text here.Some text here.
-		Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-		Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
+	        <div  class="new_div">
+				<div class="buttonfloat">
+					<input type="submit" value="Read More" name="button1" id="button1" onclick="window.location='redirect.html';">
+				</div>
+				<div id="new_div12"></div>
+				<div id="new_div1" class="newdivi"></div>
+				
+			</div>
+		
+			<div  class="new_div">
+				<div class="buttonfloat">
+					<input type="submit" value="Read More" name="button2" id="button2" onclick="window.location='redirect1.html';">
+					</div>
+					<div id="new_div13"></div>
+					<div id="new_div2" class="newdivi"></div>
+					
+				</div>
 			
-			</p></div></div>
-			<div  class="new_div"><div class="buttonfloat"><input type="submit" value="Read More" name="button2" id="button2" onclick="window.location='redirect.html';"></div><div id="new_div2"><p id="p" class="font" style="color:#1A8F57;">
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
+			<div class="new_div">
+				<div class="buttonfloat">
+					<input type="submit" value="Read More" name="button3" id="button3" onclick="window.location='redirect2.html';">
+					</div>
+					<div id="new_div14"></div>
+					<div id="new_div3" class="newdivi"></div>
+			</div>
 			
-			</p></div></div>
-			<div class="new_div"><div class="buttonfloat"><input type="submit" value="Read More" name="button3" id="button3" onclick="window.location='redirect.html';"></div><div id="new_div3"><p id="p" class="font" style="color:#1A8F57;">
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			
-			</p></div></div>
-			<div class="new_div"><div class="buttonfloat"><input type="submit" value="Read More" name="button4" id="button4" onclick="window.location='redirect.html';"></div><div  id="new_div4"><p id="p" class="font" style="color:#1A8F57;">
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			Some text here.Some text here.Some text here.Some text here.Some text here.Some text here.
-			
-			</p></div></div>
+			<div class="new_div">
+				<div class="buttonfloat">
+					<input type="submit" value="Read More" name="button4" id="button4" onclick="window.location='redirect3.html';">
+					</div>
+					<div  id="new_div15"></div>
+					<div id="new_div4" class="newdivi"></div>
+			</div>
 	        
-	  </div>
-
+	  
+</div>
 	  
 	  <footer>
 	     <div id="div_footer_left">
