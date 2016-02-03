@@ -13,19 +13,18 @@
   document.getElementById("new_div12").innerHTML=snapshot.name(); 
 });
 
-var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
 	   myFirebaseRef.child("HEADING2").on("value", function(snapshot) {
   document.getElementById("new_div2").innerHTML=snapshot.val();  
   document.getElementById("new_div13").innerHTML=snapshot.name(); 
 });
 
-var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+
 	   myFirebaseRef.child("HEADING3").on("value", function(snapshot) {
   document.getElementById("new_div3").innerHTML=snapshot.val();
 document.getElementById("new_div14").innerHTML=snapshot.name();  
 });
 
-var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+
 	   myFirebaseRef.child("HEADING4").on("value", function(snapshot) {
   document.getElementById("new_div4").innerHTML=snapshot.val();  
   document.getElementById("new_div15").innerHTML=snapshot.name(); 
@@ -56,7 +55,7 @@ var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
 	  
 	        <div  class="new_div">
 				<div class="buttonfloat">
-					<input type="submit" value="Read More" name="button1" id="button1" onclick="window.location='redirect.html';">
+					<a href="redirect.html#test1">Read More</a>
 				</div>
 				<div id="new_div12"></div>
 				<div id="new_div1" class="newdivi"></div>
@@ -65,7 +64,7 @@ var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
 		
 			<div  class="new_div">
 				<div class="buttonfloat">
-					<input type="submit" value="Read More" name="button2" id="button2" onclick="window.location='redirect1.html';">
+					<a href="redirect.html#test2">Read More</a>
 					</div>
 					<div id="new_div13"></div>
 					<div id="new_div2" class="newdivi"></div>
@@ -74,7 +73,7 @@ var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
 			
 			<div class="new_div">
 				<div class="buttonfloat">
-					<input type="submit" value="Read More" name="button3" id="button3" onclick="window.location='redirect2.html';">
+					<a href="redirect.html#test3">Read More</a>
 					</div>
 					<div id="new_div14"></div>
 					<div id="new_div3" class="newdivi"></div>
@@ -82,7 +81,7 @@ var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
 			
 			<div class="new_div">
 				<div class="buttonfloat">
-					<input type="submit" value="Read More" name="button4" id="button4" onclick="window.location='redirect3.html';">
+					<a href="redirect.html#test4">Read More</a>
 					</div>
 					<div  id="new_div15"></div>
 					<div id="new_div4" class="newdivi"></div>

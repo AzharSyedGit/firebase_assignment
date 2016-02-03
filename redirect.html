@@ -5,11 +5,31 @@
 	    <script src="js/assign.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
 	   <script>
-	   var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	   var x=window.location.hash.substring(1);
+	  
+	  var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	  if(x=="test1"){
 	   myFirebaseRef.child("HEADING1").on("value", function(snapshot) {
-  document.getElementById("new_div1").innerHTML=snapshot.val();  
-  document.getElementById("new_div12").innerHTML=snapshot.name(); 
-});
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
+     else if(x=="test2"){
+	   myFirebaseRef.child("HEADING2").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
+
+ else if(x=="test3"){
+	   myFirebaseRef.child("HEADING3").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();
+document.getElementById("div12").innerHTML=snapshot.name();  
+});}
+
+ else if(x=="test4"){
+	   myFirebaseRef.child("HEADING4").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
 </script>
 </head>
   <body>
@@ -20,8 +40,8 @@
 	  <div id="redirectdiv">
 	  
 	  <h4>Latest News</h4><hr>
-	  <div id="new_div12"></div>
-				<div id="new_div1" class="newdivi"></div>
+	  <div id="div12"></div>
+				<div id="div11" ></div>
 	  
 	  </div>
 	  
